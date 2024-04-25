@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Helping Hands</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Helping Hands</div>
+      <div class="links">
+        <a class="linkBox" href="#">Email</a>
+        <a class="linkBox" href="#">Instagram</a>
+        <a class="linkBox" href="#">Facebook</a>
+        <a class="linkBox" href="#">About Us</a>
+      </div>
+    </nav>
+    <div class="heroWrapper">
+      <div class="content">
+        <div class="quote">Helping the need is the best cause!</div>
+        <div class="buttonsWrapper">
+          <button class="donateButton">Donate</button>
+          <button class="donateButton">Our Donors</button>
+        </div>
+      </div>
+      <div class="heroImg"><img src="heroImg.jpg" alt="heroPic" /></div>
+    </div>
+    <div class="submissionWrapper">
+      <form class="formWrapper">
+        <h2>Submit the form to donate</h2>
+        <div class="row">
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Enter your name"
+            class="inputField"
+            required
+          />
+
+          <input
+            type="number"
+            name="phone"
+            placeholder="Enter your phone number"
+            class="inputField"
+            required
+          />
+        </div>
+        <div class="row">
+          <select class="inputField" style="width: 13rem;">
+            <option value="">Select Category</option>
+            <option value="food">Food</option>
+            <option value="cloths">Cloths</option>
+            <option value="footwear">Footwear</option>
+          </select>
+          <input
+            type="number"
+            name="quantity"
+            placeholder="Quantity"
+            class="inputField"
+          />
+        </div>
+        <textarea name="address" cols="61" rows="4" placeholder="Enter your address" class="addressBox"></textarea>
+        <textarea name="occassion" cols="61" rows="1" placeholder="Occassion/Reason" class="addressBox"></textarea>
+        <input type="submit" value="Submit" class="submitButton" />
+      </form>
+      <div class="sidePics">
+        <div class="imageWrapper"><img src="pic1.jpg" /></div>
+        <div class="imageWrapper"><img src="pic3.jpg" /></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
