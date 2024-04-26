@@ -178,3 +178,89 @@ input::-webkit-inner-spin-button {
     border-radius: 0.5rem;
     overflow: hidden;
 }
+
+#submitMessage {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.donorBody {
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+}
+
+.donorHeading {
+  color: black;
+  margin-left: 2rem;
+}
+
+.donorsWrapper {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  color: black;
+}
+
+.donorBox {
+  display: flex;
+  gap: 4rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-wrap: wrap;
+}
+
+.donorImage {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.donorTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 1rem 0rem;
+  color: rgba(20, 190, 240, 1);
+}
+
+.donorReason {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.infoWrapper {
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 240, 255, 1),
+    rgba(232, 241, 255, 0.47)
+  );
+  color: black;
+}
+
+
+.tableWrapper {
+  padding: 2rem;
+}
+
+table {
+  padding: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+  padding: 1rem 2rem;
+  word-wrap: break-word;
+  border-bottom: 1px solid black;
+}
+
+thead {
+  font-weight: 700;
+}

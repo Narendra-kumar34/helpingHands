@@ -21,14 +21,14 @@
       <div class="content">
         <div class="quote">Helping the need is the best cause!</div>
         <div class="buttonsWrapper">
-          <button class="donateButton">Donate</button>
-          <button class="donateButton">Our Donors</button>
+          <a class="donateButton" href="#submitForm">Donate</a>
+          <a class="donateButton" href="./ourDonors.html">Our Donors</a>
         </div>
       </div>
       <div class="heroImg"><img src="heroImg.jpg" alt="heroPic" /></div>
     </div>
-    <div class="submissionWrapper">
-      <form class="formWrapper">
+    <div class="submissionWrapper" id="submitForm">
+      <form class="formWrapper" onsubmit="handleSubmit(event)">
         <h2>Submit the form to donate</h2>
         <div class="row">
           <input
@@ -36,19 +36,20 @@
             name="fullname"
             placeholder="Enter your name"
             class="inputField"
+            id="name"
             required
           />
-
           <input
             type="number"
             name="phone"
             placeholder="Enter your phone number"
             class="inputField"
+            id="phone"
             required
           />
         </div>
         <div class="row">
-          <select class="inputField" style="width: 13rem;">
+          <select class="inputField" id="category" style="width: 13rem;">
             <option value="">Select Category</option>
             <option value="food">Food</option>
             <option value="cloths">Cloths</option>
@@ -57,13 +58,15 @@
           <input
             type="number"
             name="quantity"
-            placeholder="Quantity"
+            placeholder="Quantity in Kg"
             class="inputField"
+            id="quantity"
           />
         </div>
-        <textarea name="address" cols="61" rows="4" placeholder="Enter your address" class="addressBox"></textarea>
-        <textarea name="occassion" cols="61" rows="1" placeholder="Occassion/Reason" class="addressBox"></textarea>
+        <textarea name="address" cols="61" rows="4" placeholder="Enter your address" class="addressBox" id="address"></textarea>
+        <textarea name="occassion" cols="61" rows="1" placeholder="Occassion/Reason" class="addressBox" id="occassion"></textarea>
         <input type="submit" value="Submit" class="submitButton" />
+        <div id="submitMessage"></div>
       </form>
       <div class="sidePics">
         <div class="imageWrapper"><img src="pic1.jpg" /></div>
