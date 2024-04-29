@@ -199,6 +199,13 @@ input::-webkit-inner-spin-button {
   margin-left: 2rem;
 }
 
+.donorHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
 .donorsWrapper {
   padding: 2rem;
   display: grid;
@@ -263,4 +270,44 @@ td {
 
 thead {
   font-weight: 700;
+}
+
+.aboutUsContent {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.aboutContentWrapper {
+  padding: 0rem 2rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.aboutPicsCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: black;
+}
+
+.aboutPicBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutName {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.aboutDesignation {
+  font-size: 14px;
+  font-weight: 500;
 }
